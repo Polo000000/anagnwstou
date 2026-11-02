@@ -594,6 +594,9 @@
   .cp-total{display:flex; justify-content:space-between; font-family:var(--serif); font-size:20px; padding-top:20px;}
   .cp-empty{padding:40px 0; text-align:center; color:var(--text-faint); font-size:14px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .cp-note{font-size:12.5px; color:var(--text-faint); line-height:1.5; margin-top:14px;}
+  .field-row{display:grid; grid-template-columns:2fr 1fr; gap:14px;}
+  .field-row .field{min-width:0;}
+  @media (max-width:560px){ .field-row{grid-template-columns:1fr; gap:0;} }
   .field.invalid input{border-color:#E5736B;}
   .field .err{font-size:12px; color:#E5736B; display:none;}
   .field.invalid .err{display:block;}
@@ -712,7 +715,7 @@
   <div class="wrap">
   <div class="hero-text-below">
     <h1>Το βλέμμα σου, στην πιο αυθεντική του εκδοχή.</h1>
-    <p class="lead">Εξειδικευμένη φροντίδα βλεφαρίδων &amp; φρυδιών σε ήσυχο, προσωπικό περιβάλλον — με τεχνική ακρίβεια και σεβασμό στα φυσικά σου χαρακτηριστικά.</p>
+    <p class="lead">Εξειδικευμένη περιποίηση  βλεφαρίδων &amp; φρυδιών με τεχνική ακρίβεια και σεβασμό στα φυσικά σου χαρακτηριστικά.</p>
     <p class="cred-line">4+ χρόνια εμπειρίας σε lash &amp; brow τεχνικές</p>
   </div>
 </div>
@@ -795,23 +798,23 @@
 
       <div class="service-row">
         <div class="service-info"><h4>Σχηματισμός Φρυδιών</h4><p>Καθαρό, αρμονικό σχήμα βάσει των αναλογιών του προσώπου.</p></div>
-        <div class="service-price-wrap"><div class="service-price">6€</div><div class="service-duration">20 λεπτά</div></div>
+        <div class="service-price-wrap"><div class="service-price">8€</div><div class="service-duration">20 λεπτά</div></div>
       </div>
       <div class="service-row">
         <div class="service-info"><h4>Lash Lift &amp; Tint</h4><p>Φυσική ανόρθωση &amp; βαφή της δικής σου τρίχας, διάρκεια έως 8 εβδομάδες.</p></div>
-        <div class="service-price-wrap"><div class="service-price">30€</div><div class="service-duration">1 ώρα</div></div>
+        <div class="service-price-wrap"><div class="service-price">35€</div><div class="service-duration">1 ώρα</div></div>
       </div>
       <div class="service-row">
         <div class="service-info"><h4>Αφαίρεση Extensions Βλεφαρίδων</h4><p>Ασφαλής, επαγγελματική αφαίρεση υπάρχοντος σετ.</p></div>
-        <div class="service-price-wrap"><div class="service-price">5€</div><div class="service-duration">20 λεπτά</div></div>
+        <div class="service-price-wrap"><div class="service-price">10€</div><div class="service-duration">20 λεπτά</div></div>
       </div>
       <div class="service-row">
         <div class="service-info"><h4>Brow Lamination &amp; Tint</h4><p>Ανασήκωση, στοίχιση &amp; βαφή για πιο πυκνή, τακτοποιημένη εμφάνιση.</p></div>
-        <div class="service-price-wrap"><div class="service-price">25€</div><div class="service-duration">45 λεπτά</div></div>
+        <div class="service-price-wrap"><div class="service-price">30€</div><div class="service-duration">45 λεπτά</div></div>
       </div>
       <div class="service-row">
         <div class="service-info"><h4>Lash &amp; Brow Lift Combo</h4><p>Συνδυαστική συνεδρία lift &amp; tint για μάτια και φρύδια σε ένα ραντεβού.</p></div>
-        <div class="service-price-wrap"><div class="service-price">45€</div><div class="service-duration">1 ώρα 20 λεπτά</div></div>
+        <div class="service-price-wrap"><div class="service-price">55€</div><div class="service-duration">1 ώρα 20 λεπτά</div></div>
       </div>
     </div>
 
@@ -821,14 +824,15 @@
 
       <div class="service-row">
         <div class="service-info"><h4>Half Set Extensions / 1by1</h4><p>Φυσικό αποτέλεσμα με μία τεχνητή τρίχα ανά φυσική βλεφαρίδα, σε μερική πυκνότητα.</p></div>
-        <div class="service-price-wrap"><div class="service-price">40€</div><div class="service-duration">1 ώρα 30 λεπτά</div></div>
+        <div class="service-price-wrap"><div class="service-price">45€</div><div class="service-duration">1 ώρα 30 λεπτά</div></div>
       </div>
       <div class="service-row">
-        <div class="service-info"><h4>Full Set Extensions Βλεφαρίδων</h4><p>Πλήρης πυκνότητα, τεχνική 1by1 για πιο γεμάτο βλέμμα.</p></div>
+        <div class="service-info"><h4>Full Set Extensions Βλεφαρίδων</h4><p>Πλήρης πυκνότητα, τεχνική 2D/3D για πιο γεμάτο βλέμμα.</p></div>
         <div class="service-price-wrap"><div class="service-price">50€</div><div class="service-duration">1 ώρα 30 λεπτά</div></div>
       </div>
       <div class="service-row">
-        <div class="service-info"><h4>Special Effects Lash Extensions / Anime</h4><p>Έντονο, θεατρικό αποτέλεσμα — διαθέσιμες παραλλαγές σχεδίου κατόπιν συνεννόησης.</p></div>
+        <div class="service-info"><h4>Special Effects Lash Extensions / Anime</h4><p>Έντονο &amp; μοναδικό αποτέλεσμα!
+Κάθε σχέδιο προσαρμόζεται αποκλειστικά στα χαρακτηριστικά σου κατόπιν συνεννόησης.</p></div>
         <div class="service-price-wrap"><div class="service-price">60€</div><div class="service-duration">2 ώρες</div></div>
       </div>
       <div class="service-row">
@@ -836,7 +840,7 @@
         <div class="service-price-wrap"><div class="service-price">15€</div><div class="service-duration">20 λεπτά</div></div>
       </div>
       <div class="service-row">
-        <div class="service-info"><h4>Extensions Βλεφαρίδων — Συντήρηση</h4><p>Αναπλήρωση &amp; τακτοποίηση υπάρχοντος σετ extensions.</p></div>
+        <div class="service-info"><h4>Extensions Βλεφαρίδων — Συντήρηση</h4><p>Διατήρηση του υπάρχοντος σετ , με γέμισμα στα κενά και αφαίρεση των βλεφαρίδων που έχουν μεγαλώσει . Συστήνεται στις 3-4 εβδομάδες.</p></div>
         <div class="service-price-wrap"><div class="service-price">40€</div><div class="service-duration">1 ώρα 10 λεπτά</div></div>
       </div>
     </div>
@@ -1168,7 +1172,7 @@
     <div class="products-grid" id="productsGrid"></div>
 
     <p style="font-size:12.5px; color:var(--text-faint); margin-top:24px; max-width:60ch;">
-      Δεν υποστηρίζεται online πληρωμή. Η παραγγελία ολοκληρώνεται με τηλεφωνική κλήση ή με αποστολή αιτήματος — δες λεπτομέρειες στο καλάθι.
+      Καταχωρίστε την παραγγελία σας online ή τηλεφωνικά. Θα επικοινωνήσουμε σύντομα μαζί σας για τις λεπτομέρειες πληρωμής & αποστολής.
     </p>
   </div>
 </section>
@@ -1216,7 +1220,7 @@
     <div class="field" id="cf-user_email">
         <label for="cEmail">Email</label>
         <input type="email" id="cEmail" name="user_email" placeholder="name@example.com" autocomplete="email" required>
-        <span class="err">Δώσε έγκυρο email (gmail.com, yahoo.com/gr, hotmail.com/gr, outlook.com/gr).</span>
+        <span class="err">Δώσε έγκυρο email (π.χ. name@example.com).</span>
     </div>
     <div class="field" id="cf-phone">
         <label for="cPhone">Τηλέφωνο</label>
@@ -1256,7 +1260,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
           </button>
           <div class="accordion-panel"><div class="accordion-panel-inner">
-            Η χρήση αυτού του ιστότοπου προϋποθέτει αποδοχή των παρόντων όρων. Το περιεχόμενο (κείμενα, εικόνες, τιμές) μπορεί να ενημερώνεται χωρίς προειδοποίηση. Οι παραγγελίες μέσω e-shop ολοκληρώνονται αποκλειστικά τηλεφωνικά ή μέσω αιτήματος ενδιαφέροντος, χωρίς online πληρωμή.
+            Η χρήση αυτού του ιστότοπου προϋποθέτει αποδοχή των παρόντων όρων. Το περιεχόμενο (κείμενα, εικόνες, τιμές) μπορεί να ενημερώνεται χωρίς προειδοποίηση. Οι παραγγελίες σας ολοκληρώνονται online ή τηλεφωνικά.
           </div></div>
         </div>
         <div class="accordion-item">
@@ -1292,11 +1296,11 @@
         <div id="cpList"></div>
         <div class="cp-total" id="cpTotalRow"><span>Σύνολο</span><span id="cpTotal">0,00 €</span></div>
         <button type="button" class="btn btn-outline" id="cpEmpty" style="width:100%; margin-top:22px;" disabled>Αδειάστε το καλάθι σας</button>
-        <p class="cp-note">Δεν υποστηρίζεται online πληρωμή. Στείλε αίτημα ενδιαφέροντος και θα επικοινωνήσουμε μαζί σου για να ολοκληρωθεί η παραγγελία.</p>
+        <p class="cp-note">Καταχωρίστε την παραγγελία σας online ή τηλεφωνικά. Θα επικοινωνήσουμε σύντομα μαζί σας για τις λεπτομέρειες πληρωμής & αποστολής.</p>
       </div>
 
       <div>
-        <h3>Εκδήλωση Ενδιαφέροντος</h3>
+        <h3>Ολοκλήρωση Παραγγελίας</h3>
         <form id="cpForm" novalidate>
           <div class="field" id="cpf-user_name">
             <label for="cp_user_name">Ονοματεπώνυμο</label>
@@ -1306,18 +1310,35 @@
           <div class="field" id="cpf-user_email">
             <label for="cp_user_email">Email</label>
             <input type="email" id="cp_user_email" name="user_email" autocomplete="email" required>
-            <span class="err">Δώσε έγκυρο email (gmail.com, yahoo.com/gr, hotmail.com/gr, outlook.com/gr).</span>
+            <span class="err">Δώσε έγκυρο email (π.χ. name@example.com).</span>
           </div>
           <div class="field" id="cpf-phone">
             <label for="cp_phone">Τηλέφωνο</label>
             <input type="tel" id="cp_phone" name="phone" autocomplete="tel" inputmode="numeric" maxlength="14" required>
             <span class="err">Το τηλέφωνο πρέπει να έχει 10 ψηφία και να ξεκινά από 69.</span>
           </div>
+          <div class="field" id="cpf-address">
+            <label for="checkout-address">Διεύθυνση &amp; Αριθμός</label>
+            <input type="text" id="checkout-address" name="address" autocomplete="street-address" required>
+            <span class="err">Συμπλήρωσε τη διεύθυνση και τον αριθμό.</span>
+          </div>
+          <div class="field-row">
+            <div class="field" id="cpf-city">
+              <label for="checkout-city">Πόλη / Περιοχή</label>
+              <input type="text" id="checkout-city" name="city" autocomplete="address-level2" required>
+              <span class="err">Συμπλήρωσε την πόλη ή την περιοχή.</span>
+            </div>
+            <div class="field" id="cpf-postal_code">
+              <label for="checkout-postal-code">Ταχυδρομικός Κώδικας</label>
+              <input type="text" id="checkout-postal-code" name="postal_code" autocomplete="postal-code" inputmode="numeric" maxlength="5" required>
+              <span class="err">Ο Τ.Κ. πρέπει να έχει 5 ψηφία.</span>
+            </div>
+          </div>
           <div class="field">
             <label for="cp_message">Σημειώσεις / Μήνυμα</label>
             <textarea id="cp_message" name="message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" id="cpSubmit" style="width:100%;">Αποστολή αιτήματος</button>
+          <button type="submit" class="btn btn-primary" id="cpSubmit" style="width:100%;">Αποστολή παραγγελίας</button>
           <div class="form-msg" id="cpMsg" role="status" aria-live="polite" hidden></div>
         </form>
       </div>
@@ -1427,7 +1448,7 @@
   <div class="cart-items" id="cartItems"></div>
   <div class="cart-foot">
     <div class="cart-total-row"><span>Σύνολο</span><span id="cartTotal">0,00 €</span></div>
-    <p class="cart-note">Δεν υποστηρίζεται online πληρωμή. Ολοκλήρωσε την παραγγελία με κλήση ή στέλνοντας αίτημα ενδιαφέροντος.</p>
+    <p class="cart-note">Καταχωρίστε την παραγγελία σας online ή τηλεφωνικά. Θα επικοινωνήσουμε σύντομα μαζί σας για τις λεπτομέρειες πληρωμής & αποστολής.</p>
     <a href="#cart" id="viewCartLink" class="btn btn-primary" style="width:100%; display:block; text-align:center; text-decoration:none;">Προβολή Καλαθιού</a>
     <button type="button" class="btn btn-outline" id="emptyCartDrawer" style="width:100%;" disabled>Αδειάστε το καλάθι σας</button>
   </div>
@@ -1736,8 +1757,9 @@
   });
 
   /* Validation */
-  var CP_EMAIL_RE = /^[A-Za-z0-9._%+\-]+@(gmail\.com|yahoo\.(com|gr)|hotmail\.(com|gr)|outlook\.(com|gr))$/i;
+  var CP_EMAIL_RE = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   var CP_PHONE_RE = /^69\d{8}$/;
+  var CP_POSTAL_RE = /^\d{5}$/;
   function cpSetInvalid(id, bad){
     document.getElementById('cpf-' + id).classList.toggle('invalid', bad);
     return !bad;
@@ -1749,9 +1771,15 @@
     var a = cpSetInvalid('user_name', name.length < 3);
     var b = cpSetInvalid('user_email', !CP_EMAIL_RE.test(email));
     var c = cpSetInvalid('phone', !CP_PHONE_RE.test(phone));
-    return a && b && c;
+    var addr = document.getElementById('checkout-address').value.trim();
+    var city = document.getElementById('checkout-city').value.trim();
+    var pc = document.getElementById('checkout-postal-code').value.replace(/\s/g, '');
+    var d = cpSetInvalid('address', addr.length < 3);
+    var e = cpSetInvalid('city', city.length < 2);
+    var f = cpSetInvalid('postal_code', !CP_POSTAL_RE.test(pc));
+    return a && b && c && d && e && f;
   }
-  [['cp_user_name','user_name'],['cp_user_email','user_email'],['cp_phone','phone']].forEach(function(pair){
+  [['cp_user_name','user_name'],['cp_user_email','user_email'],['cp_phone','phone'],['checkout-address','address'],['checkout-city','city'],['checkout-postal-code','postal_code']].forEach(function(pair){
     document.getElementById(pair[0]).addEventListener('input', function(){
       document.getElementById('cpf-' + pair[1]).classList.remove('invalid');
     });
@@ -1777,6 +1805,9 @@
       user_name: document.getElementById('cp_user_name').value.trim(),
       user_email: document.getElementById('cp_user_email').value.trim(),
       phone: document.getElementById('cp_phone').value.replace(/[\s\-]/g, ''),
+      address: document.getElementById('checkout-address').value.trim(),
+      city: document.getElementById('checkout-city').value.trim(),
+      postal_code: document.getElementById('checkout-postal-code').value.replace(/\s/g, ''),
       message: document.getElementById('cp_message').value.trim() || '—',
       order_details: cpOrderDetails(),
       order_total: fmt(cpTotal())
@@ -1787,7 +1818,7 @@
     cpSubmit.textContent = 'Αποστολή…';
 
     emailjs.send(CP_SERVICE_ID, CP_TEMPLATE_ID, params).then(function(){
-      cpShowMsg('success', 'Το αίτημά σου στάλθηκε επιτυχώς! Θα επικοινωνήσουμε σύντομα μαζί σου.');
+      cpShowMsg('success', 'Η παραγγελία σου στάλθηκε επιτυχώς! Θα επικοινωνήσουμε σύντομα μαζί σου.');
       cart = [];                 /* reset in-memory cart */
       saveCart();                /* writes empty 'cart_items' to localStorage */
       try{ localStorage.removeItem('lq_cart'); }catch(err){}
@@ -2151,7 +2182,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactMsg = document.getElementById('contactMsg');
     if (!contactForm) return;
 
-    const EMAIL_RE = /^[A-Za-z0-9._%+\-]+@(gmail\.com|yahoo\.(com|gr)|hotmail\.(com|gr)|outlook\.(com|gr))$/i;
+    const EMAIL_RE = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const PHONE_RE = /^69\d{8}$/;
 
     function setInvalid(key, bad) {
